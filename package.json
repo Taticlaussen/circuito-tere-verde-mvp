@@ -1,0 +1,34 @@
+{
+  "name": "circuito-tere-verde-mvp",
+  "version": "1.0.0",
+  "description": "MVP mobile moderno para o projeto Circuito Terê Verde",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && pnpm install",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && pnpm run dev --host\"",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && pnpm run dev --host",
+    "build": "cd frontend && pnpm run build"
+  },
+  "keywords": [
+    "circuito",
+    "tere",
+    "verde",
+    "trilhas",
+    "cachoeiras",
+    "ecoturismo",
+    "mvp",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Circuito Terê Verde",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
