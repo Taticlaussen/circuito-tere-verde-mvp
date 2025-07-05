@@ -1,36 +1,34 @@
-# 🌳 Circuito Terê Verde - MVP Mobile
+🌳 Circuito Terê Verde - MVP Mobile
 
-![Status do Projeto](https://img.shields.io/badge/Status-MVP%20Conclu%C3%ADdo-brightgreen ) ![Licença](https://img.shields.io/badge/License-MIT-blue.svg )
+Um MVP de uma aplicação mobile moderna, desenvolvida para o projeto Circuito Terê Verde. Este MVP visa ser o ponto de partida para conectar entusiastas da natureza às belezas de Teresópolis, oferecendo funcionalidades essenciais para explorar trilhas e cachoeiras, com um design intuitivo e uma base tecnológica robusta.
 
-Um **Produto Mínimo Viável (MVP)** de uma aplicação mobile moderna, desenvolvida para o projeto **Circuito Terê Verde**. Este MVP visa ser o ponto de partida para conectar entusiastas da natureza às belezas de Teresópolis, oferecendo funcionalidades essenciais para explorar trilhas e cachoeiras, com um design intuitivo e uma base tecnológica robusta.
-
-## ✨ Visão Geral
+Visão Geral
 
 O Circuito Terê Verde é uma iniciativa para promover o ecoturismo e a exploração consciente das áreas naturais de Teresópolis. Este MVP mobile é a primeira etapa para digitalizar essa experiência, proporcionando aos usuários acesso fácil a informações sobre trilhas, cachoeiras e, futuramente, eventos e biodiversidade local.
 
-## 🚀 Funcionalidades Implementadas (MVP)
+Funcionalidades Implementadas (MVP)
 
 Este MVP inclui as seguintes funcionalidades essenciais:
 
--   **Autenticação de Usuários:**
+- Autenticação de Usuários:
     -   Telas de **Login** e **Cadastro** completas.
     -   Autenticação segura via **JWT (JSON Web Tokens)**.
     -   Criptografia de senhas com **Bcrypt**.
--   **Cadastro Inteligente:**
+-   Cadastro Inteligente:
     -   Auto preenchimento de endereço via **API ViaCEP** no cadastro de usuário.
--   **Navegação Principal:**
+-  Navegação Principal:
     -   **Tela Principal** intuitiva com menu de acesso rápido às seções: Trilhas, Cachoeiras, Eventos e Biodiversidade.
--   **Gestão de Trilhas:**
+-   Gestão de Trilhas:
     -   **Listagem de Trilhas:** Visualização de trilhas existentes com fotos e nomes.
     -   **Filtro por Dificuldade:** Opção para filtrar trilhas por nível de dificuldade (Fácil, Moderado, Difícil, Muito Difícil).
     -   **Cadastro de Nova Trilha:** Formulário completo para inclusão de novas trilhas (Nome, Foto, Endereço, Link Google Maps, Nível de Dificuldade, Tempo Estimado, Observações, Link para Agendamento).
     -   **Visualização de Detalhes da Trilha:** Tela dedicada com todas as informações de uma trilha específica.
--   **Design e Experiência do Usuário:**
+-   Design e Experiência do Usuário:
     -   Interface **moderna e responsiva**, otimizada para dispositivos móveis (mobile-first).
     -   Paleta de cores em tons de verde, remetendo à natureza e alinhada à identidade visual do projeto.
     -   Integração do **logo do Circuito Terê Verde** em todas as telas.
 
-## 🚧 Funcionalidades Futuras (Em Desenvolvimento)
+Funcionalidades Futuras (Em Desenvolvimento)
 
 As seguintes seções e funcionalidades estão planejadas para futuras iterações:
 
@@ -39,7 +37,7 @@ As seguintes seções e funcionalidades estão planejadas para futuras iteraçõ
 -   **Seções Eventos e Biodiversidade:** Marcadas como "Em desenvolvimento", com telas placeholder.
 -   **Gerenciamento (CRUD) Completo:** Implementação das operações de Edição (Update) e Exclusão (Delete) para Trilhas e Cachoeiras no frontend.
 
-## 🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 ### Backend
 
@@ -60,7 +58,7 @@ As seguintes seções e funcionalidades estão planejadas para futuras iteraçõ
 -   **Axios**: Cliente HTTP para comunicação com a API do backend.
 -   **Lucide React**: Biblioteca de ícones.
 
-## ⚙️ Instalação e Execução Local
+Instalação e Execução Local
 
 Para configurar e executar o projeto em sua máquina local, siga os passos abaixo:
 
@@ -73,21 +71,18 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 -   [pnpm](https://pnpm.io/installation ) (gerenciador de pacotes alternativo, recomendado para o frontend)
 -   Conexão com a internet (necessária para o MongoDB Atlas e ViaCEP)
 
-### Passos para Configuração
+Passos para Configuração
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone https://github.com/SEU_USUARIO/circuito-tere-verde-mvp.git
+    git clone https://github.com/TatiClaussen/circuito-tere-verde-mvp.git
     cd circuito-tere-verde-mvp
     ```
-    *(Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub e o link pelo do seu repositório. )*
-
-2.  **Instale as Dependências:**
+  2.  **Instale as Dependências:**
     Na pasta raiz do projeto, execute o script que instalará as dependências tanto do backend quanto do frontend:
     ```bash
     npm run install-all
     ```
-    *Este comando navegará para as pastas `backend` e `frontend` e executará `npm install` e `pnpm install`, respectivamente.*
 
 3.  **Configuração do Backend (`.env`):**
     O arquivo `.env` para o backend já está configurado com as variáveis de ambiente necessárias. Você pode encontrá-lo em `backend/.env`:
@@ -96,7 +91,6 @@ Certifique-se de ter as seguintes ferramentas instaladas:
     JWT_SECRET=circuito_tere_verde_jwt_secret_key_2024
     PORT=3000
     ```
-    *Para ambientes de produção, é **altamente recomendado** que você utilize suas próprias credenciais e chaves secretas, e que o `MONGO_URI` seja de um banco de dados dedicado ao seu ambiente.*
 
 4.  **Execute a Aplicação:**
     Na pasta raiz do projeto, execute o comando para iniciar ambos os servidores (backend e frontend) simultaneamente:
@@ -106,7 +100,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
     -   O **Backend** estará disponível em: `http://localhost:3000`
     -   O **Frontend** estará disponível em: `http://localhost:5173`
 
-## 📱 Como Usar o MVP
+Como Usar o MVP
 
 Após iniciar a aplicação, acesse `http://localhost:5173` no seu navegador:
 
@@ -121,11 +115,11 @@ Após iniciar a aplicação, acesse `http://localhost:5173` no seu navegador:
     -   Explore a seção **Trilhas** para visualizar a lista, filtrar por dificuldade e adicionar novas trilhas.
     -   As seções **Cachoeiras**, **Eventos** e **Biodiversidade** estão em desenvolvimento.
 
-## 🎨 Design e Estilo
+Design e Estilo
 
-O design do MVP segue uma abordagem moderna e limpa, com foco na usabilidade mobile. A paleta de cores é dominada por tons de verde (`#4CAF50`, `#66BB6A`, `#81C784` ), complementada por elementos de glassmorphism e gradientes suaves para uma experiência visual agradável e que remete à natureza.
+O design do MVP segue uma abordagem moderna e limpa, com foco na usabilidade mobile. A paleta de cores é dominada por tons de verde complementada por elementos de glassmorphism e gradientes suaves para uma experiência visual agradável e que remete à natureza.
 
-## 📊 Estrutura do Banco de Dados (MongoDB)
+Estrutura do Banco de Dados (MongoDB)
 
 O banco de dados MongoDB Atlas utiliza as seguintes coleções:
 
